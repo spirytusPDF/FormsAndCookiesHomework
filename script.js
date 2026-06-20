@@ -54,7 +54,7 @@ document.getElementById("email").addEventListener("change", function (event) {
     const error_email = document.getElementById("emailError");
     error_email.style.color = "red";
 
-    if (!email.match(/[a-zA-Z\d]{3}@[a-zA-Z].[a-zA-Z]/gm) ) {
+    if (!email.match(/[a-zA-Z|\d]{3}@[a-zA-Z].[a-zA-Z]/gm) ) {
         error_email.textContent = "Enter a valid email address";
         isValid = false;
     }else {
@@ -66,6 +66,7 @@ document.getElementById("email").addEventListener("change", function (event) {
 document.getElementById("password").addEventListener("change", function (event) {
     let password = event.target.value;
     const error_password = document.getElementById("passwordError");
+      error_password.style.color = "red";
     const specialSymbols = "*/-+.,<>?!#@$%^&"
     let isPasswordValid = true
     let hasSpecial = false;
