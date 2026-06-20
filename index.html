@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <script src="script.js" defer></script>
+    <script src="cookieControls.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="mode">
+    <select id="modes">
+        <option id="light">light</option>
+        <option id="dark">dark</option>
+    </select>
+</div>
+    <div id="SignUpForm">
+        <div id="HasError"></div>
+
+        <label for="name">Name: </label>
+        <input type="text" id="name">
+        <div id="nameError"></div>
+
+        <label for="email">Email: </label>
+        <input type="text" id="email">
+        <div id="emailError"></div>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password">
+        <div id="passwordError"></div>
+
+        <button id="signUp">Sign up</button>
+    </div>
+    <div id="signedUpUser">
+        <p id="userNameHello"></p>
+        <p id="emailHello"></p>
+        <button id="exit">Exit</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    color: #222;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body[data-theme="light"] {
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+body[data-theme="dark"] {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+#mode {
+    margin-top: 30px;
+}
+
+#modes {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#SignUpForm,
+#signedUpUser {
+    margin-top: 50px;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body[data-theme="light"] #SignUpForm,
+body[data-theme="light"] #signedUpUser {
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+body[data-theme="dark"] #SignUpForm,
+body[data-theme="dark"] #signedUpUser {
+    background: #2b2b2b;
+    box-shadow: 0 5px 15px rgba(0,0,0,.4);
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+body[data-theme="dark"] input {
+    background: #3a3a3a;
+    color: white;
+    border-color: #555;
+}
+
+input:focus {
+    border-color: #4a90e2;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #357bd8;
+}
